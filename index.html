@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cadastro de Clientes</title>
+	</head>
+	
+	<body>
+		<h1>Cadastro de Clientes</h1>
+		<section id="corpo-full">
+			<article id="Noticia Principal>
+			
+			<form method="post" id="fContato" action="mailto:vifcorso@gmail.com">
+			
+			<fieldset id="usuario"><legend>Identificação do Usuário</legend>
+				<p><label for="cNome">Nome:</label>
+					<input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+				<p><label for="cMail">E-mail:</label> 
+					<input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="E-Mail"/></p>
+				<p><label for="cNasc">Data de Nascimento:</label>
+					<input type="date" name="tNasc" id="cNasc"/></p>
+				<p><label for="cDoc">RG:</label>
+					<input type="text" name="tDoc" id="cDoc" size="10" maxlength="10" placeholder="RG"/></p>
+				<p><label for="cCpf">CPF:</label>
+					<input type="text" name="tCpf" id="cCpf" size="10" maxlength="11" placeholder="CPF"/></p>
+				<p><label for="cCnp">CNPJ:</label>
+					<input type="text" name="tCnp" id="cCnp" size="10" maxlength="16" placeholder="CNPJ"/></p>
+				<fieldset id="sexo"><legend>Sexo:</legend>
+					<input type="radio" name="tSexo" id="cMasc"/> <label for="cMasc">Masculino</label><br/>
+					<input type="radio" name="tSexo" id="cFem"/> <label for="cFem">Feminino</label>
+				</fieldset>
+				
+				<fieldset id="cliente"><legend>Tipo de Cliente:</legend>
+					<input type="radio" name="tcli" id="cJur"/> <label for="cJur">Jurídica</label><br/>
+					<input type="radio" name="tcli" id="cFis"/> <label for="cFis">Física</label>
+				</fieldset>
+			</fieldset>
+			
+			<fieldset id="endereco"><legend>Endereço</legend>
+				<p><label for="cRua">Rua:</label>
+				<input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Endereço"</p>
+				<p><label for="cNum">Número:</label> 
+				<input type="number" name="tNum" id="cNum" min="0" max="9999"</p>
+				<p><label for="cCid">Cidade:</label>
+				<input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Cidade" list="cidades"/></p>
+				<datalist id="cidades">
+					<option value="São Paulo"></option>
+					<option value="São Bernardo do Campo"></option>
+					<option value="São José dos Campos"></option>
+					<option value="Rio de Janeiro"></option>
+					<option value="Nova Iguaçu"></option>
+					<option value="Niterói"></option>
+					<option value="Florianópolis"></option>
+					<option value="Videira"></option>
+					<option value="Gramado"></option>
+					<option value="Cascavel"></option>
+				</datalist>
+				<p><label for="cEst">Estado:</label>
+				<select name="tEst" id="cEst"></p>
+					<optgroup label="Região Sudeste">
+						<option value="SP" selected>São Paulo</option>
+						<option value="RJ">Rio de Janeiro</option>
+						<option value="MG">Minas Gerais</option>
+						</optgroup>
+					
+					<optgroup label="Região Sul">
+						<option value="PR">Paraná</option>
+						<option value="SC">Santa Catarina</option>
+						<option value="RS">Rio Grande do Sul</option>
+					</optgroup>
+					
+				
+				</select></p>
+			</fieldset>
+				
+			<input type="submit" value="ENVIAR"/>
+			</form>
+				
+			</article>
+		</section>
+	</body>
+</html>
