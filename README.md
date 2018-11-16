@@ -1,2 +1,2 @@
-# ViniRegister.github.io
+# http://RegisterViaja.github.io
 customer registration screen!!!
