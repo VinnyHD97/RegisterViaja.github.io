@@ -1,2 +1,2 @@
-# http://RegisterViaja.github.io
+# http://VinnyRegister.github.io
 customer registration screen!!!
